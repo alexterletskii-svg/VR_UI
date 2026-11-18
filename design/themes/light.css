@@ -1,0 +1,19 @@
+/* Вариант B — «Светлое стекло»: матовое белое стекло, тёмный текст, фирменный синий как главное действие */
+:root{--title:#0B1F3A;--ink:#10233D;--mute:#5A6B80;--line:rgba(11,31,58,.12);--fill:rgba(11,31,58,.06);--fill-hi:rgba(11,31,58,.09);
+  --ring:rgba(11,31,58,.35);--ok:#12915A;--bad:#D42B1E;--warn:#C27F0A;--ray:#1E7FE8;--heat:#0A4DCC;--heat-hi:#2F6FE6;
+  --alarm-num:#C8281C;--alarm-glow:none;--alarm-sub:#8A2A22;--alarm-hint:#8A5A00;
+  --r-panel:34px;--r-card:26px;--r-btn:22px}
+.panel{background:linear-gradient(160deg,rgba(255,255,255,.88),rgba(238,244,252,.80));box-shadow:0 30px 70px rgba(20,40,80,.28),inset 0 0 0 1.5px rgba(255,255,255,.9),inset 0 -1px 0 rgba(11,31,58,.06)}
+.panel.alert{background:linear-gradient(160deg,rgba(255,244,242,.94),rgba(255,226,222,.90));box-shadow:0 30px 70px rgba(120,20,20,.30),inset 0 0 0 1.5px rgba(214,60,50,.45)}
+.card{background:rgba(255,255,255,.55);box-shadow:inset 0 0 0 1.5px rgba(11,31,58,.10)}
+.card.sel{box-shadow:inset 0 0 0 3px var(--ray),0 0 0 6px rgba(30,127,232,.18)}
+.cover{color:#0B1F3A;background:radial-gradient(circle at 50% 130%,rgba(255,122,40,.85),rgba(255,122,40,0) 70%),linear-gradient(170deg,#EAF2FF,#D7E6FB)}
+.cover svg{filter:none}
+.chip{background:rgba(11,31,58,.07);box-shadow:none;color:#10233D}
+.card .tag{background:rgba(255,255,255,.85)!important;position:absolute}
+.btn{background:rgba(11,31,58,.08);color:#0B1F3A;box-shadow:inset 0 0 0 1.5px rgba(11,31,58,.18)}
+.btn.heat{background:linear-gradient(180deg,#2F6FE6,#0A4DCC);color:#fff;box-shadow:0 10px 26px rgba(10,77,204,.35)}
+.btn.bad{background:linear-gradient(180deg,#F0544A,#D42B1E);color:#fff}
+.bar{background:rgba(11,31,58,.12)}
+.h1{text-shadow:none}
+.logo .ph{color:#0B1F3A}

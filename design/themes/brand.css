@@ -1,0 +1,16 @@
+/* Вариант D — «Фирменный синий»: плоские корпоративные панели #02213F, белое главное действие, оранжевый акцент */
+:root{--title:#FFFFFF;--ink:#F2F6FB;--mute:#9DB2CB;--line:rgba(255,255,255,.13);--fill:rgba(255,255,255,.07);--fill-hi:rgba(255,255,255,.11);
+  --ring:rgba(255,255,255,.4);--heat:#FF6A13;--heat-hi:#FF8A3D;--ray:#5CC8FF;--alarm-num:#FFFFFF;--alarm-glow:0 0 36px rgba(255,70,50,.85);--alarm-sub:#FFC2BC;--alarm-hint:#FFD27A;
+  --r-panel:26px;--r-card:20px;--r-btn:18px}
+.panel{background:#02213F;box-shadow:0 26px 60px rgba(0,10,30,.45),inset 0 0 0 1.5px rgba(255,255,255,.12)}
+.panel.alert{background:#4A0F18;box-shadow:0 26px 60px rgba(40,0,0,.5),inset 0 0 0 1.5px rgba(255,140,130,.5)}
+.card{background:#0B3560;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.10)}
+.card.sel{box-shadow:inset 0 0 0 3px var(--heat)}
+.cover{background:linear-gradient(170deg,#12467F,#0B3560);color:#FF8A3D}
+.cover svg{filter:none}
+.card .tag{background:#02213F!important;position:absolute}
+.btn{background:rgba(255,255,255,.10);box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.22)}
+.btn.heat{background:#FFFFFF;color:#02213F;box-shadow:0 8px 22px rgba(0,0,0,.25)}
+.btn.bad{background:#FF4B3E;color:#fff}
+.bar i{box-shadow:none}
+.h1{text-shadow:none}

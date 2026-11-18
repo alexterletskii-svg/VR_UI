@@ -1,0 +1,25 @@
+/* Вариант C — «Промышленный HUD»: рубленые углы, сталь и сигнальный жёлтый, узкий жирный шрифт */
+:root{--title:#FFFFFF;--ink:#EEF1F3;--mute:#A4AEB6;--line:rgba(255,255,255,.14);--fill:rgba(255,255,255,.07);--fill-hi:rgba(255,255,255,.12);
+  --ring:rgba(255,255,255,.45);--heat:#FFC400;--heat-hi:#FFD84D;--ray:#4FD0FF;--ok:#4BD37B;--bad:#FF4B3E;
+  --alarm-num:#FFFFFF;--alarm-glow:0 0 30px rgba(255,60,40,.8);--alarm-sub:#FFB4AD;--alarm-hint:#FFD84D;
+  --r-panel:0;--r-card:0;--r-btn:0;--r-chip:3px}
+.h1,.h2,.h3,.num{font-family:'Roboto',sans-serif;font-variation-settings:'wdth' 75;font-weight:800;letter-spacing:0}
+.h1{font-size:76px}
+.panel{background:rgba(20,25,30,.95);border-radius:0;box-shadow:none;
+  clip-path:polygon(0 0,calc(100% - 30px) 0,100% 30px,100% 100%,30px 100%,0 calc(100% - 30px))}
+.panel::before{content:'';position:absolute;left:0;top:0;width:260px;height:10px;background:repeating-linear-gradient(135deg,#FFC400 0 14px,#14181c 14px 28px)}
+.panel::after{content:'';position:absolute;inset:0;pointer-events:none;border:2px solid rgba(255,255,255,.16);clip-path:inherit}
+.panel.alert{background:rgba(44,10,10,.96)}
+.panel.alert::before{background:repeating-linear-gradient(135deg,#FF4B3E 0 14px,#14181c 14px 28px)}
+.stage{padding:56px}
+.card{background:rgba(255,255,255,.05);border-radius:0;box-shadow:inset 0 0 0 2px rgba(255,255,255,.14);clip-path:polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,0 100%)}
+.card.sel{box-shadow:inset 0 0 0 4px var(--heat)}
+.cover{background:repeating-linear-gradient(135deg,rgba(255,196,0,.10) 0 16px,rgba(255,196,0,0) 16px 32px),linear-gradient(170deg,#262d34,#171c21);color:#FFC400}
+.cover svg{filter:none}
+.btn{border-radius:0;background:transparent;box-shadow:inset 0 0 0 2.5px rgba(255,255,255,.5);font-weight:800;font-family:'Roboto';font-variation-settings:'wdth' 85;font-size:30px;clip-path:polygon(0 0,calc(100% - 16px) 0,100% 16px,100% 100%,16px 100%,0 calc(100% - 16px))}
+.btn.heat{background:#FFC400;color:#14181c;box-shadow:none}
+.btn.bad{background:#FF4B3E;color:#fff;box-shadow:none}
+.chip{border-radius:3px;box-shadow:inset 0 0 0 1.2px rgba(255,255,255,.2);background:rgba(255,255,255,.06)}
+.bar,.bar i{border-radius:0}.bar{height:12px}
+.card .tag{background:#14181c!important;position:absolute}
+.hr{background:rgba(255,255,255,.2)}
