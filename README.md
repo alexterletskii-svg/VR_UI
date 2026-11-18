@@ -14,6 +14,7 @@
 - `design/tokens.css` — цвета, размеры, радиусы (источник правды, переносится в Unity)
 - `design/ui.css` — компоненты: panel, btn, chip, card, bar, dock, ray/reticle, logo
 - `design/window.css` — режим «окно без фона»
+- `design/themes/` — темы оформления (основная — industrial)
 - `assets/logo/` — сюда кладётся белая версия `nlmk.svg`
 - `docs/UNITY.md` — перенос в Unity
 
@@ -23,9 +24,6 @@ pip install playwright && playwright install chromium
 python3 tools/render.py
 ```
 
-## Варианты стиля (на выбор)
-`variants/<тема>/` — те же 5 окон в других стилях; темы лежат в `design/themes/`.
-- `light` — светлое стекло
-- `industrial` — промышленный HUD (срезанные углы, жёлтый)
-- `brand` — фирменный синий `#02213F`, плоский
-Основной стиль (`png/`) — графитовое стекло. После выбора остальные варианты можно удалить.
+## Стиль
+Основной — **«Промышленный HUD»** (`design/themes/industrial.css`): срезанные углы, сталь, сигнальный жёлтый, полосы «опасно», узкий жирный шрифт.
+Остальные варианты лежат в `variants/` для сравнения: `graphite` (графитовое стекло), `light` (светлое стекло), `brand` (фирменный синий). Темы — `design/themes/`.
