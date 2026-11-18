@@ -1,0 +1,12 @@
+/* Окна без фона: каждая страница рендерится в PNG с прозрачным фоном. */
+@import url("ui.css");
+html,body{width:auto;height:auto;overflow:visible;background:transparent}
+.stage{display:inline-block;padding:56px}
+.panel,.card{position:relative}
+.panel{background:var(--glass-hi),rgba(14,22,36,.90)}
+.panel.alert{background:var(--glass-hi),rgba(86,12,20,.92)}
+.card{background:var(--glass-hi),rgba(255,255,255,.06);backdrop-filter:none}
+.cover{height:210px;display:flex;align-items:center;justify-content:center;color:#fff;position:relative;
+  background:radial-gradient(circle at 50% 130%,rgba(255,106,19,.95),rgba(255,106,19,0) 68%),linear-gradient(170deg,rgba(255,255,255,.14),rgba(255,255,255,.02))}
+.cover svg{filter:drop-shadow(0 6px 18px rgba(255,106,19,.6))}
+.card .tag{top:18px;left:18px}
